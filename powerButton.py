@@ -14,7 +14,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(button, GPIO.IN, pull_up_down = GPIO.PUD_UP)
 
 # Our functions on what to do when the buttons are pressed
-def shutdown():
+def shutdown(channel):
 	os.system("sudo shutdown -h now")
 def reboot(): 
 	os.system("sudo shutdown -r now")
