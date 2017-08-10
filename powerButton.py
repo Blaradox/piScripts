@@ -21,7 +21,6 @@ def reboot():
 
 # Add our functions to execute when the button pressed event happens
 GPIO.add_event_detect(button, GPIO.FALLING, callback = shutdown, bouncetime = 2000)
-GPIO.add_event_detect(button, GPIO.FALLING, callback = reboot, bouncetime = 3000)
 
 # Now wait!
 while 1:
