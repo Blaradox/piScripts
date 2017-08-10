@@ -1,0 +1,4 @@
+On boot:
+	start VNC: enabled
+	shutdown button: enabled
+	wake on lan: disabled
